@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ordenando.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-center align-items-center w-100">
+        <div class="form-group w-50">
+            <label for="value">Value</label>
+            <input type="number" class="form-control" id="value" placeholder="value">
+            <button  type="button" class="btn btn-primary mt-2" onclick="add()">Add</button>
+            <hr class="mt-3 mb-3"/>
+            <label for="method">Sorting function</label>
+            <select class="form-control" id="method">
+                <option value="bubble">bubble sort</option>
+                <option value="selection">selection sort</option>
+                <option value="quick">quick sort</option>
+            </select>
+            <div class="d-flex flex-row">
+                <button  type="button" class="btn btn-primary mt-2 mr-1" onclick="shuffleArray()">Shuffle</button>
+                <button  type="button" class="btn btn-primary mt-2 mr-1" onclick="sort()">Sort</button>
+            </div>
+        </div>
+        <div class="w-50">
+            <hr class="mt-3 mb-3"/>
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
